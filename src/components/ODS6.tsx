@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { Target, Users, Leaf, BarChart3 } from "lucide-react"
+import type { Variants } from "framer-motion";
 
 const stats = [
   { value: "2.2B", label: "pessoas sem água potável",     color: "text-cyan" },
@@ -35,10 +36,20 @@ const pillars = [
   },
 ]
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
-}
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
 
 export default function ODS6() {
   return (
