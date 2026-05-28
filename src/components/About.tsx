@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { Droplets, AlertTriangle, HeartPulse, Cpu } from "lucide-react"
-
+import type { Variants } from "framer-motion";
 const cards = [
   {
     icon:  Droplets,
@@ -36,11 +36,20 @@ const cards = [
   },
 ]
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 50 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
-}
-
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
 export default function About() {
   return (
     <section id="sobre" className="relative py-32 overflow-hidden">
