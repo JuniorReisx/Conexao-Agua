@@ -1,73 +1,143 @@
-# React + TypeScript + Vite
+# 🌊 Conexão Água
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An educational digital platform created to promote awareness about clean water, basic sanitation, and sustainability through technology and environmental education.
 
-Currently, two official plugins are available:
+Developed as an Extension Project for the Information Systems course at Universidade Jorge Amado (UNIJORGE), aligned with the **United Nations Sustainable Development Goal 6 (SDG 6) — Clean Water and Sanitation**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# 📚 About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Conexão Água was developed with the purpose of using technology as a tool for environmental awareness and social impact.
 
-## Expanding the ESLint configuration
+The platform presents educational content related to:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Clean water awareness
+* Basic sanitation
+* Sustainable habits
+* Responsible water consumption
+* Environmental preservation
+* Social impact through technology
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The project was presented at the **Secretaria de Infraestrutura Hídrica e Saneamento (SIHS)** as part of a university extension initiative focused on community engagement and sustainability.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 🎯 Main Goals
+
+* Promote environmental education through digital experiences
+* Encourage conscious water consumption
+* Raise awareness about the importance of sanitation
+* Connect technology with social impact
+* Support sustainability initiatives aligned with SDG 6
+
+---
+
+# 🌎 SDG 6 — Clean Water and Sanitation
+
+This project is aligned with the United Nations Sustainable Development Goal 6:
+
+> Ensure availability and sustainable management of water and sanitation for all.
+
+Learn more:
+[https://sdgs.un.org/goals/goal6](https://sdgs.un.org/goals/goal6)
+
+---
+
+# 🚀 Technologies Used
+
+* React
+* TypeScript
+* Vite
+* TailwindCSS
+* Framer Motion
+* Lucide React
+
+---
+
+# ✨ Features
+
+* Modern responsive design
+* Interactive educational sections
+* Sustainable water-saving tips
+* Environmental awareness content
+* Animated UI with smooth transitions
+* Professional institutional layout
+* Accessibility-focused structure
+
+---
+
+# 📸 Presentation
+
+The platform was developed and presented as part of an academic extension project focused on:
+
+* sustainability;
+* environmental education;
+* social awareness;
+* digital inclusion through technology.
+
+---
+
+# 🛠️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/conexao-agua.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Access the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd conexao-agua
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+# 📂 Project Structure
+
+```bash
+src/
+ ├── components/
+ ├── pages/
+ ├── assets/
+ ├── styles/
+ └── main.tsx
+```
+
+---
+
+# 🎓 Academic Context
+
+This project was developed for the University Extension Activity of the Information Systems course at:
+
+**Universidade Jorge Amado (UNIJORGE)**
+
+Theme:
+
+> Human Rights, Social Protagonism, and Inclusive Practices
+
+---
+
+# 👨‍💻 Author
+
+Gil Maik de Jesus Reis Junior
+
+---
+
+# 📄 License
+
+This project was developed for educational and academic purposes.
+
