@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { Droplets, RotateCcw, Trash2, Leaf, ShowerHead, Sprout, FlaskConical, Recycle } from "lucide-react"
+import type { Variants } from "framer-motion";
 
 const tips = [
   {
@@ -84,10 +85,20 @@ const tips = [
   },
 ]
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
-}
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
 
 export default function Dicas() {
   return (
