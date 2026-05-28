@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { Monitor, Smartphone, Wifi, BookOpen, Share2, BarChart2, Globe2, Zap } from "lucide-react"
-
+import type { Variants } from "framer-motion";
 const features = [
   {
     icon: BookOpen,
@@ -39,11 +39,21 @@ const techPillars = [
   { icon: Monitor,    label: "Institucional",      sub: "Uso pela SIHS"       },
 ]
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } },
-}
 
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
 // ── Mockup visual ─────────────────────────────────────────────────────────────
 function BrowserMockup() {
   return (
