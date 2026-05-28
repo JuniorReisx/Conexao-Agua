@@ -51,7 +51,7 @@ const fadeUp: Variants = {
   },
 };
 
-export default function ODS6() {
+export default function Ods6() {
   return (
     <section id="ods6" className="relative py-32 overflow-hidden">
 
