@@ -1,10 +1,11 @@
 import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { ChevronDown, Globe, Droplets } from "lucide-react"
-
+import type { Variants } from "framer-motion";
 // ── Particles canvas ──────────────────────────────────────────────────────────
 function ParticlesCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -58,11 +59,20 @@ const stagger = {
   hidden: {},
   show: { transition: { staggerChildren: 0.15, delayChildren: 0.3 } },
 }
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
-}
-
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
 export default function Hero() {
   const handleScroll = (id: string) =>
     document.querySelector(id)?.scrollIntoView({ behavior: "smooth" })
