@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Impacto from "../components/Impacto";
 import Navbar from "../components/Navbar";
-import Ods6 from "../components/ods6";
+import Objetivos from "../components/Objetivos";
 import Tecnologia from "../components/Tecniologia";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
     <Navbar/>
     <Hero/>
     <About/>
-    <Ods6/>
+    <Objetivos/>
     <Dicas/>
     <Impacto/>
     <Tecnologia/>
