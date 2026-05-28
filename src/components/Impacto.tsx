@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion"
 import { useRef, useEffect, useState } from "react"
 import { Users, TreePine, GraduationCap, HeartHandshake, TrendingUp, Globe2 } from "lucide-react"
-
+import type { Variants } from "framer-motion";
 // ── Animated counter ──────────────────────────────────────────────────────────
 function Counter({ to, suffix = "", duration = 2 }: { to: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0)
@@ -89,10 +89,20 @@ const impacts = [
   },
 ]
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } },
-}
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
 
 function ProgressBar({ pct, color }: { pct: number; color: string }) {
   const ref = useRef<HTMLDivElement>(null)
